@@ -15,7 +15,7 @@ gulp.task('serve', (cb) => {
 
     // 监听js, html静态文件的改变通知服务器
     gulp.watch(['server/src/public/**/*.js', 'server/src/views/**/*.html'], function(file){
-        server.notify.apply('server, [file]');
+        server.notify.apply(server, [file]);
     });
 
     // 监听服务端文件的改变通知服务器,这是需要重启服务

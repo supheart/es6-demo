@@ -54,7 +54,7 @@ indexRoute(app);
 
 //----start-启动服务器------
 var port = utool.conf('host.port') || '443';
-// app.use(require('connect-livereload')({port: port}));
+app.use(require('connect-livereload')());
 var isHttps = utool.conf('host.isHttps');
 if(isHttps){
 	var https = require('https');

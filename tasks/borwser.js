@@ -5,7 +5,7 @@ import {log, colors} from 'gulp-util';      // 命令行输出
 import args from './util/args';             // 命令行参数解析
 
 gulp.task('browser', (cb) => {
-    if(!args.watch) return cb;
+    if(!args.watch) return cb();
 
     gulp.watch('app/**/*.js', ['scripts']);
     gulp.watch('app/**/*.html', ['pages']);
