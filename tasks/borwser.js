@@ -9,5 +9,6 @@ gulp.task('browser', (cb) => {
 
     gulp.watch('app/**/*.js', ['scripts']);
     gulp.watch('app/**/*.html', ['pages']);
-    gulp.watch('app/**/*.css', ['css']);
+    gulp.watch('app/**/*.scss', ['css']);
+    gulp.watch('app/images/*.*', ['statics']);
 });

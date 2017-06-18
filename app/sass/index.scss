@@ -1,0 +1,41 @@
+body {
+    background-color: #ddd; 
+    header{
+        position: relative; margin: 0 auto; width: 1300px; background: #eee; 
+        .logo{
+            position: absolute; top: 3px; left: 20px; width: 50px; height: 50px;
+            img{
+                width: 100%; border: 3px solid #ddd; border-radius: 50%;
+            }
+        }
+        .up-head{
+            width: 100%; line-height: 35px; padding-left: 80px;
+            &>div{
+                display: inline-block; margin-right: 10px;
+            }
+            .periods{
+                span{
+                    color: #FF701F;
+                }
+            }
+        }
+        .down-head{
+            background: #FF9F38; padding-left: 80px;
+            ul {
+                display: inline-block; padding: 0; margin: 0;
+                &:last-child{
+                    float: right;
+                }
+                li{
+                    display: inline-block; padding: 5px 12px; color: #fff; font-size: 16px; font-weight: 700; border-right: 1px solid #FF701F;
+                    &:last-child{
+                        border-right: none;
+                    }
+                    &.active{
+                        background: #FF701F;
+                    }
+                }
+            }
+        }
+    }
+}

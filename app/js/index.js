@@ -1,11 +1,12 @@
-class Test{
-  constructor(){
-    this.a = 'test aaa';
-  }
-}
+import 'babel-polyfill';
+import Timer from './class/timer';
 
-window.onload = function() {
-  console.log('start index page...aaa');
-  let test = new Test();
-  document.body.innerHTML = test.a;
-};
+window.onload = () => {
+    
+    var tt= new Timer();
+    tt.countDown(1497785780000, (result) => {
+        console.log(result);
+    }, () => {
+        console.log('timer end;');
+    })
+}

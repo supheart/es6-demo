@@ -1,2 +1,46 @@
 body {
   background-color: #ddd; }
+  body header {
+    position: relative;
+    margin: 0 auto;
+    width: 1300px;
+    background: #eee; }
+    body header .logo {
+      position: absolute;
+      top: 3px;
+      left: 20px;
+      width: 50px;
+      height: 50px; }
+      body header .logo img {
+        width: 100%;
+        border: 3px solid #ddd;
+        border-radius: 50%; }
+    body header .up-head {
+      width: 100%;
+      line-height: 35px;
+      padding-left: 80px; }
+      body header .up-head > div {
+        display: inline-block;
+        margin-right: 10px; }
+      body header .up-head .periods span {
+        color: #FF701F; }
+    body header .down-head {
+      background: #FF9F38;
+      padding-left: 80px; }
+      body header .down-head ul {
+        display: inline-block;
+        padding: 0;
+        margin: 0; }
+        body header .down-head ul:last-child {
+          float: right; }
+        body header .down-head ul li {
+          display: inline-block;
+          padding: 5px 12px;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+          border-right: 1px solid #FF701F; }
+          body header .down-head ul li:last-child {
+            border-right: none; }
+          body header .down-head ul li.active {
+            background: #FF701F; }
