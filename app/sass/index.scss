@@ -37,5 +37,23 @@ body {
                 }
             }
         }
+        .sub-list{
+            padding: 5px; padding-left: 25px; font-size: 0;
+            ul{
+                padding: 0;
+                .sub-item{
+                    display: inline-block; padding: 2px 12px; font-size: 14px;  list-style-type: none; border: 1px solid #ddd; border-right: none; cursor: pointer;
+                    &:last-child{
+                        border-right: 1px solid #ddd;
+                    }
+                    &.active{
+                        background-color: #FF9F38; color: #fff; font-weight: 700;
+                    }
+                    &:hover{
+                        background-color: #FF9F38; color: #fff; font-weight: 700;
+                    }
+                }
+            }
+        }
     }
 }
